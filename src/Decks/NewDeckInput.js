@@ -15,25 +15,25 @@ function NewDeckInput({submitFunction, deck={},nameChanger,descriptionChanger}){
 
     return (
         <form>
-            <div class="form-group">
-                <label for="DeckNameInput">Deck Name</label>
+            <div className="form-group">
+                <label htmlFor="DeckNameInput">Deck Name</label>
                 <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="DeckNameInput"
                 value={deckName()}
                 onChange={nameChanger}>
 
                 </input>
             </div> 
-            <div class="form-group">
-                <label for="DeckDescriptionInput">Deck Description</label>
+            <div className="form-group">
+                <label htmlFor="DeckDescriptionInput">Deck Description</label>
                 <textarea
-                    class="form-control"
+                    className="form-control"
                     id="DeckDescriptionInput"
                     rows="4"
-                    value={deckDesc()}>
-
+                    value={deckDesc()}
+                    onChange={descriptionChanger}>
                     </textarea>
 
             </div>

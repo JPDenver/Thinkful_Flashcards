@@ -8,7 +8,6 @@ import {listDecks} from '../utils/api/index';
 import DecksHome from "../Decks/DecksHome";
 
 
-{/*Import Link, Switch, Router and start routing here*/}
 
 function Layout() {
 
