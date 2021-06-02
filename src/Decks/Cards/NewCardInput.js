@@ -23,20 +23,20 @@ function NewCardInput({
 
     return (
         <form>
-            <div class="form-group">
-                <label for="cardFrontInput">Front</label>
+            <div className="form-group">
+                <label htmlFor="cardFrontInput">Front</label>
                 <textarea
-                    class="form-control"
+                    className="form-control"
                     id="front"
                     rows="3"
                     value={cardFront()}
                     onChange={newFront}
                     ></textarea> 
             </div>
-            <div class="form-group">
-                <label for="cardBackInput">Back</label>
+            <div className="form-group">
+                <label htmlFor="cardBackInput">Back</label>
                 <textarea
-                    class="form-control"
+                    className="form-control"
                     id="back"
                     rows="3"
                     value={cardBack()}
@@ -49,7 +49,7 @@ function NewCardInput({
                 type="button"
                 onClick={()=>history.go(-1)}
             >
-                    Finito
+                    Cancel
             </button>
             <button
                 className="btn btn-primary ml-2"

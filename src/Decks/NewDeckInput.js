@@ -1,7 +1,7 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 
-function NewDeckInput({submitFunction, deck={},nameChanger,descriptionChanger}){
+function NewDeckInput({submit, deck={},nameChanger,descriptionChanger}){
     
     const history = useHistory();
 
@@ -47,7 +47,7 @@ function NewDeckInput({submitFunction, deck={},nameChanger,descriptionChanger}){
             <button
                 className="btn btn-primary"
                 type="submit"
-                onClick={submitFunction}
+                onClick={submit}
             >
                 Submit
             </button>

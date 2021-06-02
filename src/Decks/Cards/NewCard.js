@@ -28,10 +28,10 @@ function NewCard(){
 
 
     //Make use of createCard
-    function changeFront(event){
+    function newFront(event){
         setCard({...card,front:event.target.value});
     }
-    function changeBack(event){
+    function newBack(event){
         setCard({...card,back:event.target.value});
     }
 
@@ -49,7 +49,7 @@ function NewCard(){
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                        <Link to="/">Home</Link>
+                        <Link to="/">Home  </Link>
                     </li>
                      <li className="breadcrumb-item">
                         <Link to={`/decks/${deckId}`}>{deck.name}</Link>
@@ -63,8 +63,8 @@ function NewCard(){
             <NewCardInput
                 submitHandler={submitHandler}
                 card={card}
-                changeFront={changeFront}
-                changeBack={changeBack}
+                newFront={newFront}
+                newBack={newBack}
             />
         </div>
     )
