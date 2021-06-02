@@ -1,15 +1,17 @@
 import React,{Fragment} from 'react';
-import { Switch,Route } from 'react-router-dom';
+import { Link,Switch,Route } from 'react-router-dom';
 import AllDecks from './AllDecks';
 import DecksHome from '../../Decks/DecksHome'
-
+import {useHistory} from 'react-router';
+import CreateDeckButton from './CreateDeckButton'
+ 
 
 function Home({decks}){
+
     return (
     <Fragment>
-        <p>This is the Home Page</p>
-        {/* //Will eventually be it's own component */}
-        <button>+ Create deck</button>
+        
+        <CreateDeckButton/>
         <Switch>
             <Route exact path='/'>
                 {/* DeckList Component Here */}

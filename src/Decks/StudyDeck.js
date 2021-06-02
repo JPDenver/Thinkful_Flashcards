@@ -60,7 +60,7 @@ function StudyDeck({decks}){
     function sideToShow(){
         return study.front 
         ? study.cards[study.currentCard].front
-        : study.cards[study.currentCard].back
+        : study.cards[study.currentCard].back;
     }
 
     //Display the number of cards left
@@ -70,7 +70,7 @@ function StudyDeck({decks}){
 
     //Last Card
     function lastCard(){
-        return setStudy.currentCard >= study.cardTotal -1;
+        return study.currentCard >= study.cardTotal -1;
     }
 
 
@@ -103,7 +103,7 @@ function StudyDeck({decks}){
     //Next button
     function nextButton(){
         return study.flipped ? (
-            <button className="btn btn-warning" onCLick={nextCard}>
+            <button className="btn btn-warning" onClick={nextCard}>
                 Next
             </button>
         ) : null;
